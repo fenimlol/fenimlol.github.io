@@ -1,11 +1,15 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
     background: #007bff;
     color: white;
     padding: 100px 0;
+    text-align: center;
 }
 
 section {
@@ -41,4 +45,29 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Transition for smoother effects */
+.transition {
+    transition: all 0.3s ease;
+}
+
+/* Portfolio Item Styles */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
 }
