@@ -140,11 +140,10 @@
         <!-- JavaScript lmao-->
         <script>
             window.addEventListener('load', function() {
-              // Check if there's a hash in the URL
-              if(window.location.hash) {
-                // If so, clear it by navigating to the "Home" section
-                window.location.hash = "wrapper--hero";
-              }
+              history.pushState("", document.title, window.location.pathname + window.location.search);
+              window.onbeforeunload = function() {
+                window.scrollTo(0, 0);
+              };
             });
           </script>
 
