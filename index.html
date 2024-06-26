@@ -20,6 +20,7 @@
                 </ul>
             </nav>
         </header>
+
         <div id="container--main">
 
             <section id="wrapper--hero" class="section--page">
@@ -135,6 +136,13 @@
 
 
         </div>
+
+        <!-- JavaScript lmao-->
+        <script>
+            window.addEventListener('load', function() {
+              history.pushState("", document.title, window.location.pathname + window.location.search);
+            });
+          </script>
 
     </body>
 </html>
