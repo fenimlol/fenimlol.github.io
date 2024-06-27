@@ -11,7 +11,13 @@
     <body>
         <header>
             <nav>
-                <ul>
+                <!-- Hamburger Menu Icon -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul class="nav-links">
                     <li><a href="#wrapper--hero">Home</a></li>
                     <li><a href="#qualifications--list">Skills</a></li>
                     <li><a href="#work-history-wrapper">Work History</a></li>
@@ -19,6 +25,12 @@
                     <li><a href="#portfolio-wrapper">Portfolio</a></li>
                 </ul>
             </nav>
+            <script>
+                function toggleMenu() {
+                    var menu = document.querySelector('.nav-links');
+                    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+                }
+            </script>
         </header>
 
         <div id="container--main">
